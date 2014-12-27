@@ -20,7 +20,7 @@ fi
 mv djangoskeleton $NAME
 
 # Change the file contents
-sed -i "" "/s/djangoskeleton/$NAME" ./*
+sed -i "" "s/djangoskeleton/$NAME/" ./*
 
 # Install dependencies
 source env/bin/activate
