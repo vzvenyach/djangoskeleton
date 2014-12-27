@@ -32,4 +32,7 @@ git init
 
 # Rewrite the readme file
 rm readme.md
-echo "# $NAME" >> readme.md 
+echo "# $NAME" >> readme.md
+
+python manage.py syncdb
+python manage.py migrate
