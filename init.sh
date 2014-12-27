@@ -20,7 +20,7 @@ fi
 mv djangoskeleton $NAME
 
 # Change the file contents
-sed -i "" "s/djangoskeleton/$NAME/" ./*
+find ./ -name '*.py' -type f -exec sed -i "" "s/djangoskeleton/$NAME/g" {} +
 
 # Install dependencies
 source env/bin/activate
@@ -29,3 +29,7 @@ pip install -r requirements.txt
 # Start the git repository where this will be housed
 rm -rf .git
 git init
+
+# Rewrite the readme file
+rm readme.md
+echo "# $NAME" >> readme.md 
