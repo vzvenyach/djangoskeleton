@@ -27,5 +27,5 @@ source env/bin/activate
 pip install -r requirements.txt
 
 # Start the git repository where this will be housed
-rm -r .git
+rm -rf .git
 git init
