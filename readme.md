@@ -9,3 +9,7 @@ A skeleton for building django-apps, which I have been doing more often than I r
 `git clone https://github.com/vzvenyach/djangoskeleton.git && cd djangoskeleton && bash init.sh`
 
 2. Start hacking.
+
+## License
+
+Public Domain
