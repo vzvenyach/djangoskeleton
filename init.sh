@@ -26,6 +26,9 @@ find ./ -name '*.py' -type f -exec sed -i "" "s/djangoskeleton/$NAME/g" {} +
 source env/bin/activate
 pip install -r requirements.txt
 
+# Install bower components
+bower install bootstrap
+
 # Start the git repository where this will be housed
 rm -rf .git
 git init
